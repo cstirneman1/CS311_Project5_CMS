@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Game</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+<body>
+<header id="header">Chris's Mad Libs</header>
+
+  <div class="container">
+    <img src="img/character.jpg" alt="character">
+
+    <div class="grid-items" id="data-collection">
+        <div class="input">
+            <label>Enter an adjective:</label><br>   
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 1">
+
+        <div class="input" onmouseover="highlightInput(this)" onmouseout="resetInput(this)">
+            <label>Enter a verb:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 2">
+
+        <div class="input">
+            <label>Enter an adjective:</label><br>
+        </div>  
+        <input type="text" class="mad-lib-input" placeholder="Word 3">
+     
+        <div class="input">
+            <label>Enter a noun:</label><br>
+        </div>       
+        <input type="text" class="mad-lib-input" placeholder="Word 4">
+
+        <div class="input">
+            <label>Enter a verb:</label><br>
+        </div>        
+        <input type="text" class="mad-lib-input" placeholder="Word 5">
+
+        <div class="input">
+            <label>Enter an adjective:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 6">
+
+        <div class="input">
+            <label>Enter a noun:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 7">
+
+        <div class="input">
+            <label>Enter an adjective:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 8">
+
+        <div class="input">
+            <label>Enter an adjective:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 9">
+
+        <div class="input">
+            <label>Enter a noun:</label><br>
+        </div>
+        <input type="text" class="mad-lib-input" placeholder="Word 10">
+        
+        <div class="input">
+            <button onclick="showMadLib()">Show Mad Lib</button>
+        </div>
+
+        <div class="input" style="display: none;" id="reset-button" >
+            <button onclick="resetMadLib()">Reset Mad Lib</button>
+        </div>        
+    </div>
+
+    <div id="mad-lib" style="display: none;"></div>
+    
+  </div>
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
